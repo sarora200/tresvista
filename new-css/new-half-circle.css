@@ -1,0 +1,534 @@
+
+/*
+	create by nasir farhadi
+	email : nasirfarhadi92@gmail.com
+	Github : nasirfarhadi92
+*/
+	
+	.circular_slider_wrp{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}	
+	
+	.holderCircle{
+		width: 280px;
+		height: 550px;
+		border-radius:100%;
+		/* margin: 0px auto; */
+		position:relative;
+		overflow: hidden;
+	}
+	
+	.holderCircle:after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    z-index: 99;
+    /* display: none; */
+}
+	
+	/* .holderCircle::after{
+		content:'';
+		width:500px;
+		height:500px;
+		border-radius:100%;
+		border:1px solid #000;
+		position:absolute;
+		top:0;
+	} */
+
+	.dotCircle{
+		width: 582px;
+		height:100%;
+		position:absolute;
+		margin:auto;
+		top:0;
+		left: initial;
+		right:0;
+		bottom:0;
+		border-radius:100%;
+		z-index:20;
+	}
+
+	.dotCircle  .itemDot{
+		display: flex;
+		width: 175px;
+		height: 100px;
+		position:absolute;
+		color:#fff;
+		border-radius:100%;
+		text-align: center;
+		line-height: 80px;
+		font-size:30px;
+		z-index:3;
+		cursor:pointer;
+		align-items: center;
+		justify-content: center;
+	}
+	.dots_circle{
+		position: absolute;
+		left: 0;
+		display:none;
+	}
+	.dots_circle i{
+		color: #e8ecf6;
+		background: #fff;
+		margin: 0 0 0 -7px;
+		font-size: 28px;
+	}
+	.icon_circle{
+		background: #afc1ff;    width: 100px;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100%;
+	}
+	
+	.dotCircle .itemDot.active .icon_circle{background: #6084ff;}
+	.dotCircle .itemDot.active .dots_circle{
+		display:block;
+	}
+	
+	.dotCircle .itemDot.active .dots_circle i{color:#6084ff;}
+	
+	.icon_circle i{
+		
+		background: #fff;
+		color: #b4afbc;
+				
+		border-radius: 50%;
+				
+		width: 60px;
+				
+		height: 60px;
+				
+		display: flex;
+				
+		align-items: center;
+				
+		justify-content: center;
+				
+		box-shadow: 0px 7px 8px 1px #00000087;
+	}
+
+	.icon_circle .inner_icon_circle{
+		width: 70%;
+		height: 70%;
+		background-color: #fff;
+		border-radius: 50%;
+		box-shadow: -1px 6px 5px #817e7e;
+	}
+	
+	.icon_circle .inner_icon_circle img{
+	  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	  filter: grayscale(100%);	
+	  margin-top: -15px;
+	}
+	
+	.dotCircle .itemDot.active .icon_circle i{
+		color:#6084ff;
+	}
+	
+	.dotCircle .itemDot.active .icon_circle img{
+	  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	  filter: grayscale(0%);	
+	}
+	
+	.round_slider_content{
+    position: absolute;
+    right: 0;
+}
+
+	.contentCircle .CirItem h4{
+		font-size: 26px;
+		line-height: 30px;
+		color: #352a6c;
+		font-weight: 400;
+		font-family: "Montserrat";
+		text-align: left;
+		text-transform: uppercase;
+		margin: 5px 0;
+	}
+
+	.contentCircle .CirItem p{
+		font-size: 18px;
+		letter-spacing: 0px;
+		line-height: 24px;
+		color: #202020;
+		font-weight: 400;
+		font-family: "PT Sans";
+		margin: 0;
+	}
+
+
+	.round_slider_content h4{}
+	.round_slider_content p{}
+	
+	/*.dotCircle  .itemDot::after {
+		content:"";
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		border-radius: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index:2;
+		border:3px solid #fff;
+	}*/
+	/*.dotCircle  .itemDot::before{
+		content:"";
+		width: 85px;
+		height: 85px;
+		position: absolute;
+		border-radius: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index:2;
+		border:3px solid;
+		
+	}*/
+	
+	
+	.dotCircle  .itemDot1{
+		background:#ffb048;
+	}
+	.dotCircle  .itemDot1::after	{
+		
+	}
+	.dotCircle  .itemDot1::before{
+		border-color:#ffb048
+	}
+	
+	
+	.dotCircle  .itemDot2{
+		background:#28a9e0;
+	}
+	.dotCircle  .itemDot2::after	{
+		
+	}
+	.dotCircle  .itemDot2::before{	
+		border-color:#28a9e0;
+	}
+
+	.dotCircle  .itemDot3{
+		background:#89c445;
+	}
+	
+	.dotCircle  .itemDot3::after	{	
+		
+	}
+	.dotCircle  .itemDot3::before{
+		border-color:#89c445;
+	}
+	
+	.dotCircle  .itemDot4{
+		background:#fca72b;
+	}
+	
+	.dotCircle  .itemDot4::after	{
+	
+	}
+	.dotCircle  .itemDot4::before{
+	border-color:#fca72b;
+	}
+	
+	.dotCircle  .itemDot5{
+	background:#3dbea0;
+		
+	}
+	
+	.dotCircle  .itemDot5::after	{
+	
+	}
+	.dotCircle  .itemDot5::before{	
+	border-color:#3dbea0;
+	}
+	
+	
+	.dotCircle  .itemDot6{
+		background:#afc1ff;
+	}
+	.dotCircle  .itemDot6::after	{
+	
+	}
+	/*.dotCircle  .itemDot6::before{	
+		border-color:#aa229d;
+	}*/
+	
+	.dotCircle  .itemDot7{
+		background:#e06410;
+	}
+	.dotCircle  .itemDot7::after	{
+		
+	}
+	.dotCircle  .itemDot7::before{
+		border-color:#e06410;	
+	}
+	
+	.dotCircle  .itemDot8{
+	background:#1362b7;
+		
+	}
+	.dotCircle  .itemDot8::after	{
+	
+	}
+	.dotCircle  .itemDot8::before{	
+	border-color:#1362b7;
+	}
+	
+	.dotCircle  .itemDot9{
+		background:#e52c47;
+		
+	}
+	.dotCircle  .itemDot9::after	{
+	
+	}
+	.dotCircle  .itemDot9::before{
+border-color:#e52c47;	
+	}
+	
+	.dotCircle  .itemDot10{
+		background:#fe4491;
+	}
+	.dotCircle  .itemDot10::after{
+
+	}
+	.dotCircle  .itemDot10::before{	
+	border-color:#fe4491;
+	}
+	
+	
+	
+	
+	
+	/*.dotCircle .itemDot.active{
+		background: #30417f;
+		color:#fff;
+		transition:0.5s;
+	}*/
+	.dotCircle .itemDot.active::before{
+		border-color:#34495e;
+	}	
+	
+	.dotCircle  .itemDot .forActive{
+		width:56px;
+		height:56px;
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		display:none;
+	}
+	
+	.dotCircle  .itemDot .forActive::after{
+		content: '';
+		width: 5px;
+		height: 5px;
+		border: 3px solid #FE9290;
+		bottom: -31px;
+		left: -14px;
+		filter: blur(1px);
+		position: absolute;
+		border-radius: 100%;
+	}
+	
+	.dotCircle  .itemDot .forActive::before{
+		content: '';
+		width: 6px;
+		height: 6px;
+		filter: blur(5px);
+		top: -15px;
+		position: absolute;
+		transform: rotate(-45deg);
+		border: 6px solid #F48E2A;
+		right: -39px;
+	}
+	
+	
+	.dotCircle  .itemDot.active .forActive{
+		display:block;
+	}
+	
+	
+	/*.dotCircle .itemDot:hover{
+		background:#34495e;
+		color:#fff;
+		transition:0.5s;
+	}*/
+	.dotCircle .itemDot:hover::before{
+		border-color:#34495e;
+	}	
+	
+	
+	.half_border{
+		width: 250px;
+		height: 250px;
+		border-radius: 100%;
+		color: #fff;
+		position: relative;
+		top: 146px;
+		right: 127px;
+		bottom: 0;
+		left: initial;
+		margin: auto;
+		border: 4px solid #e8ecf6;
+	}
+	
+	
+	
+	.contentCircle{
+		width: calc(100% - 320px);
+		height: 60px;
+		/* border-radius: 100%; */
+		/* background: url(../img/bgcircle.png) no-repeat; */
+		color: #fff;
+		position: relative;
+		top: 0;
+		right: 0px;
+		bottom: 0;
+		left: initial;
+		/* box-shadow: 0px 0px 69px 1px #2b152e; */
+		/* margin: auto; */
+		/* border: 3px solid #e8ecf6; */
+		text-align: l;
+	}
+	
+	.contentCircle .CirItem{
+		/* display: none; */
+		/* border-radius: 100%; */
+		color: #000;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		transform: scale(0);
+		transition: 0.5s;
+		font-weight: bold;
+		font-size: 13px;
+		top: 0;
+		right: 0;
+		margin: auto;
+	}
+	
+	/* .contentCircle .CirItem h4{
+		margin: 0;
+		font-size: 21px;
+	}
+	.contentCircle .CirItem p{
+   		 margin: 0;
+	} */
+	
+	.CirItem.active{
+		z-index:1;
+		opacity:1;
+		transform:scale(1);
+		transition:0.5s;
+	}
+	
+
+	
+	@media only screen and (min-width: 300px) and (max-width: 575px){
+	
+		/* .holderCircle {
+			width: 300px;
+			height: 300px;
+			margin:110px auto;
+		}
+		.holderCircle::after {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.dotCircle{
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+
+		} */
+		.circular_slider_wrp {
+			display: block;
+		}
+		.contentCircle {
+			width: 100%;
+		}
+		.contentCircle .CirItem {
+			bottom: 0px;
+			left: 0;
+			top: 0;
+			right: 0;
+		}
+		.holderCircle:after {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 100%;
+			background: #fff;
+			top: 0;
+			z-index: 99;
+			/* display: none; */
+		}
+	}
+
+
+	
+	@media only screen and (min-width: 600px) and (max-width: 767px){
+	
+	}
+	@media only screen and (min-width: 768px) and (max-width: 991px){
+	
+	}
+	@media only screen and (min-width: 992px) and (max-width: 1199px){
+		.holderCircle {
+			width: 250px;
+			height: 520px;
+		}
+		.contentCircle {
+			width: calc(100% - 275px);
+		}
+		.dotCircle{
+			width: 555px;
+			height:100%;
+			position:absolute;
+			margin:auto;
+			top:0;
+			left: initial;
+			right:-8px;
+			bottom:0;
+			border-radius:100%;
+			z-index:20;
+		}
+	
+	}
+	@media only screen and (min-width: 1200px) and (max-width: 1499px){
+	
+	}
+	
+	@media only screen and (min-width: 1500px) {
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

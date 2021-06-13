@@ -1,0 +1,255 @@
+.culture-about-section .culture-left-inner {
+	margin-top: 60px;
+	position: relative;
+}
+.culture-about-section .culture-left-inner picture {
+	width: 100%;
+}
+
+.culture-about-section .culture-left-inner picture img {
+	width: 100%;
+}
+
+.culture-about-section .culture-left-inner .play-btn {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+.culture-about-section .play-btn button {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	box-shadow: none;
+}
+
+.culture-about-section .play-btn .btn.focus, 
+.culture-about-section .play-btn .btn:focus {
+	box-shadow: none;
+}
+
+@media screen and (min-width: 576px) {
+	#cultureModal .modal-dialog {
+		max-width: 70%;
+		width: 100%;
+	}	
+}
+
+#cultureModal .modal-header,
+#cultureModal .modal-footer {
+	border: 0;
+}
+#cultureModal .close {
+    font-size: 3rem;
+    padding: .5rem;
+    position: absolute;
+    right: 0;
+    color: #ffffff;
+    opacity: 1;
+    z-index: 9999;
+}
+#cultureModal .modal-content {
+	background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+}
+#cultureModal .close.focus, 
+#cultureModal .close:focus {
+	box-shadow: none;
+	outline: 0;	
+}
+#cultureModal .modal-body {
+	padding: 0;
+	border: 1px solid transparent;
+}
+#cultureModal .modal-body video {
+	width: 100%;
+}
+
+
+/*engagement-activities section start*/
+
+.engagement-activities {
+	background: #e8ecf6;
+	position: relative;
+	padding: 10px 0 0px;
+	margin-bottom: 70px;
+	z-index: 0;
+}
+.engagement-activities:before {
+	content: "";
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	height: 70px;
+	top: 0;
+	z-index: 0;
+	left: 0;
+}
+.engagement-activities:after {
+	content: "";
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+	z-index: 0;
+	left: 0;
+}
+.engagement-activities .engagement-top-left {
+	background: #fff;
+	padding: 0 150px 40px 0;
+	/* padding-right: 150px; */
+	position: relative;
+	z-index: 1;
+}
+.engagement-activities .engagement-top-left:before {
+	content: "";
+    position: absolute;
+    background: #fff;
+    width: 150px;
+    height: 100%;
+    top: 0px;
+    left: -150px;
+    z-index: 0;
+}
+.engagement-activities .engagement-top-left h4 {
+	font-size: 18px;
+	line-height: 38px;
+	color: #382d6d;
+	font-weight: 500;
+	font-family: 'Exo', sans-serif;
+}
+
+.engagement-activities .section-heading {
+	font-size: 40px;
+	letter-spacing: 0px;
+	line-height: 55px;
+	color: #382d6d;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+}
+.engagement-activities .engagement__cta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+.engagement-activities .cta-inner {
+	width: unset;
+}
+.engagement-activities .cta-inner a {
+    text-transform: capitalize;
+}
+.engagement-activities .cta-inner a:hover, 
+.engagement-activities .cta-inner a:focus, 
+.engagement-activities .cta-inner.active a {
+	border: 2px solid #638eff;
+    background: #638eff;
+    color: #fff;
+    transition: all 0.7s;
+}
+.engagement-activities .buddy-program {
+	padding: 70px 0 0;
+}
+.buddy-program .slide-caption__sub {
+	margin-top: 15px;
+}
+.buddy-program .buddy-designation {
+	padding: 50px;
+	background: #382d6d;
+	position: relative;
+	z-index: 1;
+}
+.buddy-program .buddy-designation p, 
+.buddy-program .buddy-designation h6, 
+.buddy-program .buddy-designation a {
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+}
+.buddy-program .buddy-designation p {
+	font-style: italic;
+}
+.buddy-program .buddy-designation h6 span {
+	font-size: 12px;
+}
+.buddy-program .buddy-designation a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
+    background: #638eff;
+}
+.buddy-program .buddy-designation a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.buddy-program .buddy-designation a span {
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transform: rotate(45deg);
+}
+/*engagement-activities section end*/
+
+
+.home-services-section.culture-services {
+	margin-top: 0;
+}
+
+.home-services-section.culture-services .section-heading {
+	font-size: 40px;
+	letter-spacing: 0px;
+	line-height: 55px;
+	color: #382d6d;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 50px;
+	width: 40%;
+}
+
+.home-services-section.culture-services .home-services-inner-container {
+	background: #fff;
+}
+
+.home-services-section.culture-services .home-services-repeat:first-of-type {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.culture-services .wit-insights {
+	padding-bottom: 100px;
+}
+.culture-services .wit-insights h4 {
+	font-size: 34px;
+	letter-spacing: 0px;
+	line-height: 35px;
+	color: #382d6d;
+	font-weight: 300;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 30px;
+}
+
+.culture-services .insight-card img {
+	width: 100%;
+}
+
+.culture-services .insight-card p {
+	font-size: 16px;
+	letter-spacing: 0px;
+	line-height: 24px;
+	color: #202020;
+	font-weight: 400;
+	font-family: 'Exo', sans-serif;
+	margin: 20px 0 15px;
+}
+
+.culture-services .read-more a {
+	font-size: 16px;
+	letter-spacing: 0px;
+	line-height: 24px;
+	color: #638eff;
+	font-weight: 600;
+	font-family: 'Exo', sans-serif;
+}
